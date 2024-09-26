@@ -1,0 +1,47 @@
+header{
+    position: fixed;
+    display: flex;justify-content: center;align-items: center;
+    width: 100%;
+    height: 65px;
+    
+    background-color: rgba(0, 0, 0, 0.322);
+    animation: header-fixed linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 100vh;
+}
+    #header_container{
+        height: 80px;
+        display: flex;justify-content: center;align-items: center;
+        gap: 20px;     
+    }
+            .style_color{
+                transition: 1s;
+                transform-origin: center;
+            }
+            #logo_group1{
+                fill: #0011ff 
+            }
+            #logo_group2{
+                fill: #0011ff;
+                transform: translate(0, 0) rotate(180deg);
+            }
+        #header_title{
+            color: rgb(0, 0, 0);
+        }
+    #header_logo{
+
+    }
+    #header_title{
+
+    }
+    nav{
+        position: absolute;
+    }
+
+@keyframes header-fixed{
+    to {
+        background-color: rgba(255, 255, 255, 0.685);
+        backdrop-filter: blur(5px);
+        color: white;
+    }
+}

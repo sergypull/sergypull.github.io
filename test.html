@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        #container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #all{
+            background-color: aliceblue;
+        }
+
+        .style_color{
+            transition: 1s;
+            transform-origin: center;
+        }
+        #logo_group1{
+            fill: rgb(255, 0, 0); 
+        }
+        #logo_group2{
+            fill: rgb(0, 00, 255);
+            transform: translate(0, 0) rotate(180deg);
+        }
+    </style>
+    <div id="container">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="500px" height="500px" id="all" viewBox="0 0 210 210"">
+            <g class="style_color" id="logo_group1">
+                <path d="M 107.57896,0.01240234 35.323941,72.237451 89.100503,126.01401 V 99.504001 L 61.851005,72.254503 107.58084,26.524672 Z"/>
+                <path d="M 107.58183,52.428676 87.779454,72.231051 107.58016,92.031755 Z"/>
+                <path d="m 126.02322,18.692789 18.61386,18.61386 -0.001,33.941976 -18.61404,-18.635423 z"/>
+            </g>
+            <g class="style_color" id="logo_group2">
+                <path d="M 107.57896,0.01240234 35.323941,72.237451 89.100503,126.01401 V 99.504001 L 61.851005,72.254503 107.58084,26.524672 Z"/>
+                <path d="M 107.58183,52.428676 87.779454,72.231051 107.58016,92.031755 Z"/>
+                <path d="m 126.02322,18.692789 18.61386,18.61386 -0.001,33.941976 -18.61404,-18.635423 z"/>
+            </g>
+        </svg>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline style="fill: red;" points="9 22 9 12 15 12 15 22" />
+      </svg>
+    <script>
+        const all = document.getElementById("all");
+        const logo_group1 = document.getElementById("logo_group1");
+        const logo_group2 = document.getElementById("logo_group2");
+
+        all.addEventListener("mouseover", function(){
+            logo_group1.style.fill = "black";
+            logo_group2.style.fill = "black";
+
+            logo_group1.style.transform = "rotate(-45deg) translate(-5px,35px)";
+            logo_group2.style.transform = "rotate(135deg) translate(-0.15px,30.4px)";
+        });
+        all.addEventListener("mouseout", function(){
+            logo_group1.style.fill = "red";
+            logo_group2.style.fill = "blue";
+
+            logo_group1.style.transform = "rotate(0deg) translate(0,0)"
+            logo_group2.style.transform = "rotate(180deg) translate(0,0)";
+        });
+
+    </script>
+</body>
+</body>
+</html>

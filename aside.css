@@ -1,0 +1,51 @@
+aside{
+    /* background-color: rgba(0, 0, 0, 0.075); */
+    width: 80px; height: 100vh;
+
+    position: fixed;
+    display: flex; justify-content: center;align-items: center;
+}
+    #aside_content{
+        /*  */
+    }
+        .aside_content_items{
+            /* border-radius: 100%; */
+            padding: 15px 15px;
+            transition: background-color .7s, box-shadow .7s
+        }
+        .aside_content_items:hover{
+            transition-duration: .2s;
+        }
+        #aside_element_instagram_bg:hover{
+            background-color: #cc2380;
+            box-shadow: 0 0 10px #cc2380;
+        }
+        #aside_element_xtwitter_bg:hover{
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+        #aside_element_facebook_bg:hover{
+            background-color: rgb(24, 119, 242);
+            box-shadow: 0 0 10px rgb(24, 119, 242);
+        }
+        #aside_element_github_bg:hover{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+        #aside_element_youtube_bg:hover{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+        #aside_element_linkedin_bg:hover{
+            background-color: rgb(0, 119, 181);
+            box-shadow: 0 0 10px rgb(0, 119, 181);
+        }
+        #aside_element_sketchfab_bg:hover{
+            background-color: rgb(0, 177, 255);
+            box-shadow: 0 0 10px rgb(0, 177, 255);
+        }
+            .aside_content_items_icons{
+                opacity: .5;
+                fill: black;
+                transition: .5s;
+            }
